@@ -1,6 +1,6 @@
-<div align="center">
+﻿<div align="center">
 
-# ✈️ AI-Based Personalized Travel Itinerary Generator
+# âœˆï¸ AI-Based Personalized Travel Itinerary Generator
 ### Using Generative AI & Advanced Prompt Engineering
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -11,36 +11,36 @@
 
 > **"Stop scrolling travel blogs. Start talking to your AI travel planner."**  
 > Generate personalized, day-by-day travel itineraries with budget breakdowns,  
-> AI assistant chat, and one-click PDF export — all powered by Google Gemini.
+> AI assistant chat, and one-click PDF export â€” all powered by Google Gemini.
 
-[🚀 Quick Start](#-quick-start) · [✨ Features](#-features) · [📸 Screenshots](#-screenshots) · [🤖 Prompt Engineering](#-prompt-engineering-methodology) · [📁 Structure](#-project-structure) · [⚠️ Limitations](#️-limitations)
+[ðŸš€ Quick Start](#-quick-start) Â· [âœ¨ Features](#-features) Â· [ðŸ“¸ Screenshots](#-screenshots) Â· [ðŸ¤– Prompt Engineering](#-prompt-engineering-methodology) Â· [ðŸ“ Structure](#-project-structure) Â· [âš ï¸ Limitations](#ï¸-limitations)
 
 </div>
 
 ---
 
-## 📋 Table of Contents
+## ðŸ“‹ Table of Contents
 
-- [🚀 The Problem](#-the-problem)
-- [💡 The Solution](#-the-solution)
-- [🌟 What Makes This Different](#-what-makes-this-different)
-- [🎥 Demo Video](#-demo-video)
-- [📸 Screenshots](#-screenshots)
-- [✨ Features](#-features)
-- [🏗️ System Architecture](#️-system-architecture)
-- [🤖 Prompt Engineering Methodology](#-prompt-engineering-methodology)
-- [🔬 Tech Stack](#-tech-stack)
-- [📁 Project Structure](#-project-structure)
-- [⚙️ Quick Start](#-quick-start)
-- [🔑 API Key Configuration](#-api-key-configuration)
-- [▶️ Running the App](#️-running-the-app)
-- [⚠️ Limitations](#️-limitations)
-- [🔮 Future Scope](#-future-scope)
-- [📄 License](#-license)
+- [ðŸš€ The Problem](#-the-problem)
+- [ðŸ’¡ The Solution](#-the-solution)
+- [ðŸŒŸ What Makes This Different](#-what-makes-this-different)
+- [ðŸŽ¥ Demo Video](#-demo-video)
+- [ðŸ“¸ Screenshots](#-screenshots)
+- [âœ¨ Features](#-features)
+- [ðŸ—ï¸ System Architecture](#ï¸-system-architecture)
+- [ðŸ¤– Prompt Engineering Methodology](#-prompt-engineering-methodology)
+- [ðŸ”¬ Tech Stack](#-tech-stack)
+- [ðŸ“ Project Structure](#-project-structure)
+- [âš™ï¸ Quick Start](#-quick-start)
+- [ðŸ”‘ API Key Configuration](#-api-key-configuration)
+- [â–¶ï¸ Running the App](#ï¸-running-the-app)
+- [âš ï¸ Limitations](#ï¸-limitations)
+- [ðŸ”® Future Scope](#-future-scope)
+- [ðŸ“„ License](#-license)
 
 ---
 
-## 🚀 The Problem
+## ðŸš€ The Problem
 
 Planning a trip is time-consuming and generic.
 
@@ -52,32 +52,32 @@ Planning a trip is time-consuming and generic.
 
 The core problems that existing tools don't solve:
 
-- ❌ **One-size-fits-all recommendations** — no personalization for budget, interests, or travel pace
-- ❌ **No budget intelligence** — you manually calculate whether your dream trip fits your wallet
-- ❌ **Static content** — can't dynamically regenerate a day, make it cheaper, or shift the style
-- ❌ **No context-aware assistant** — generic chatbots don't know *your* itinerary
+- âŒ **One-size-fits-all recommendations** â€” no personalization for budget, interests, or travel pace
+- âŒ **No budget intelligence** â€” you manually calculate whether your dream trip fits your wallet
+- âŒ **Static content** â€” can't dynamically regenerate a day, make it cheaper, or shift the style
+- âŒ **No context-aware assistant** â€” generic chatbots don't know *your* itinerary
 
 ---
 
-## 💡 The Solution
+## ðŸ’¡ The Solution
 
 **AI Travel Planner** is a Generative AI-powered itinerary generator that:
 
-🧠 **Understands your preferences** — destination, budget, trip duration, number of travellers, interests (beaches, culture, adventure), accommodation type, and dietary needs
+ðŸ§  **Understands your preferences** â€” destination, budget, trip duration, number of travellers, interests (beaches, culture, adventure), accommodation type, and dietary needs
 
-📅 **Generates a complete day-by-day itinerary** — morning, afternoon, and evening activities for every day with real attraction names, estimated costs, and transport notes
+ðŸ“… **Generates a complete day-by-day itinerary** â€” morning, afternoon, and evening activities for every day with real attraction names, estimated costs, and transport notes
 
-💰 **Breaks down your budget intelligently** — accommodation, food, activities, transport, and shopping — all within your stated budget
+ðŸ’° **Breaks down your budget intelligently** â€” accommodation, food, activities, transport, and shopping â€” all within your stated budget
 
-🔄 **Lets you regenerate and modify** — regenerate the entire trip, a single day, or tweak the style ("make it cheaper", "more adventurous", "more relaxed")
+ðŸ”„ **Lets you regenerate and modify** â€” regenerate the entire trip, a single day, or tweak the style ("make it cheaper", "more adventurous", "more relaxed")
 
-🤖 **Has a context-aware AI assistant** — the assistant knows your itinerary and answers travel questions like a real local guide
+ðŸ¤– **Has a context-aware AI assistant** â€” the assistant knows your itinerary and answers travel questions like a real local guide
 
-📄 **Exports to PDF** — one-click professional PDF itinerary download
+ðŸ“„ **Exports to PDF** â€” one-click professional PDF itinerary download
 
 ---
 
-## 🌟 What Makes This Different
+## ðŸŒŸ What Makes This Different
 
 | Capability | Generic Travel Apps | **This Project** |
 |---|---|---|
@@ -85,22 +85,22 @@ The core problems that existing tools don't solve:
 | Budget Planning | Manual | AI-generated itemized breakdown |
 | Itinerary Modification | None | Real-time regenerate, modify style |
 | AI Assistant | Scripted FAQ | Context-aware (knows your trip) |
-| Output Format | HTML listing | Structured JSON → beautiful UI + PDF |
+| Output Format | HTML listing | Structured JSON â†’ beautiful UI + PDF |
 | Prompt Engineering | None | 5 advanced techniques applied |
 | Response Reliability | N/A | JSON validation + auto-repair pipeline |
 
 **Key technical differentiators:**
-- ✅ **Structured JSON output** enforced via prompt engineering (not `response_mime_type`)
-- ✅ **3-layer JSON repair pipeline** — strip fences → trailing comma fix → block extraction
-- ✅ **Dynamic token budget** — scales output token limit with trip duration
-- ✅ **AFC disabled** — `AutomaticFunctionCallingConfig(disable=True)` prevents silent empty responses
-- ✅ **Compact chat context** — assistant receives 5-line trip summary instead of full JSON (saves ~84% tokens)
+- âœ… **Structured JSON output** enforced via prompt engineering (not `response_mime_type`)
+- âœ… **3-layer JSON repair pipeline** â€” strip fences â†’ trailing comma fix â†’ block extraction
+- âœ… **Dynamic token budget** â€” scales output token limit with trip duration
+- âœ… **AFC disabled** â€” `AutomaticFunctionCallingConfig(disable=True)` prevents silent empty responses
+- âœ… **Compact chat context** â€” assistant receives 5-line trip summary instead of full JSON (saves ~84% tokens)
 
 ---
 
-## 🎥 Demo Video
+## ðŸŽ¥ Demo Video
 
-▶ **[Watch the full demo](assets/demo/demo.mp4)**
+â–¶ **[Watch the full demo](assets/demo/demo.mp4)**
 
 The demo covers:
 1. Filling the trip planning form with preferences and budget
@@ -112,49 +112,49 @@ The demo covers:
 
 ---
 
-## 📸 Screenshots
+## ðŸ“¸ Screenshots
 
-### 🏠 Home Page
+### ðŸ  Home Page
 ![Home Page](assets/screenshots/home_page.png)
 
-### 🗺️ Plan Trip Form
+### ðŸ—ºï¸ Plan Trip Form
 ![Plan Trip](assets/screenshots/plan_trip.png)
 
-### 📅 Generated Itinerary
+### ðŸ“… Generated Itinerary
 ![Itinerary View](assets/screenshots/itinerary_view.png)
 
-### 💰 Budget Breakdown
+### ðŸ’° Budget Breakdown
 ![Budget Page](assets/screenshots/budget_page.png)
 
-### 🤖 AI Travel Assistant
+### ðŸ¤– AI Travel Assistant
 ![AI Assistant](assets/screenshots/assistant_chat.png)
 
 ---
 
-## ✨ Features
+## âœ¨ Features
 
 ### Core Features
 | Feature | Description |
 |---|---|
-| 🗺️ **Itinerary Generation** | Day-by-day plan with morning/afternoon/evening activities, attractions, costs |
-| 💰 **Budget Breakdown** | Itemized cost: accommodation, food, transport, activities, shopping |
-| 🔄 **Regenerate Trip/Day** | One click to regenerate entire trip or a specific day |
-| 🎨 **Style Modification** | "Make it cheaper / more adventurous / more relaxed" |
-| 🤖 **AI Travel Assistant** | Context-aware chatbot that knows your full itinerary |
-| 📄 **PDF Export** | Professional PDF with full day-by-day itinerary |
-| 🎓 **Prompt Engineering Page** | View the actual prompts used — educational transparency |
-| 📊 **About Project** | Architecture, tech stack, and methodology explained in-app |
+| ðŸ—ºï¸ **Itinerary Generation** | Day-by-day plan with morning/afternoon/evening activities, attractions, costs |
+| ðŸ’° **Budget Breakdown** | Itemized cost: accommodation, food, transport, activities, shopping |
+| ðŸ”„ **Regenerate Trip/Day** | One click to regenerate entire trip or a specific day |
+| ðŸŽ¨ **Style Modification** | "Make it cheaper / more adventurous / more relaxed" |
+| ðŸ¤– **AI Travel Assistant** | Context-aware chatbot that knows your full itinerary |
+| ðŸ“„ **PDF Export** | Professional PDF with full day-by-day itinerary |
+| ðŸŽ“ **Prompt Engineering Page** | View the actual prompts used â€” educational transparency |
+| ðŸ“Š **About Project** | Architecture, tech stack, and methodology explained in-app |
 
 ### Trip Inputs
-- 🌍 Destination (free text + popular presets)
-- 📅 Duration (1–14 days)
-- 👥 Number of travellers
-- 💵 Budget & currency
-- 🎯 Interests (beaches, culture, adventure, food, nature, history, etc.)
-- 🏨 Accommodation preference (budget hostel → luxury hotel)
-- 🚗 Transport preference (walking, public, car, mixed)
-- 🥗 Food preferences & dietary needs
-- 📋 Special requirements
+- ðŸŒ Destination (free text + popular presets)
+- ðŸ“… Duration (1â€“14 days)
+- ðŸ‘¥ Number of travellers
+- ðŸ’µ Budget & currency
+- ðŸŽ¯ Interests (beaches, culture, adventure, food, nature, history, etc.)
+- ðŸ¨ Accommodation preference (budget hostel â†’ luxury hotel)
+- ðŸš— Transport preference (walking, public, car, mixed)
+- ðŸ¥— Food preferences & dietary needs
+- ðŸ“‹ Special requirements
 
 ### AI & Prompt Engineering
 - Role prompting, few-shot examples, constraint injection, chain-of-thought, structured output
@@ -163,66 +163,66 @@ The demo covers:
 
 ---
 
-## 🏗️ System Architecture
+## ðŸ—ï¸ System Architecture
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                    STREAMLIT FRONTEND                        │
-│  app.py → views/home, plan_trip, itinerary, assistant,      │
-│           budget, prompt_engineering, about                  │
-└─────────────────────────┬───────────────────────────────────┘
-                           │ user inputs
-                           ▼
-┌─────────────────────────────────────────────────────────────┐
-│                    SERVICE LAYER                             │
-│                                                             │
-│  itinerary_service.py   ─── Core orchestration             │
-│  llm_service.py         ─── Gemini API wrapper             │
-│  prompt_service.py      ─── Prompt assembly                │
-│  pdf_service.py         ─── PDF generation                 │
-│  weather_service.py     ─── Weather API (optional)         │
-└─────────────────────────┬───────────────────────────────────┘
-                           │
-          ┌────────────────┼────────────────┐
-          ▼                ▼                ▼
-┌─────────────────┐  ┌──────────┐  ┌──────────────┐
-│  PROMPT LAYER   │  │  UTILS   │  │     DATA     │
-│                 │  │          │  │              │
-│ itinerary_      │  │validators│  │destinations  │
-│   prompt.py     │  │.py       │  │.py           │
-│ modifier_       │  │helpers   │  │              │
-│   prompts.py    │  │.py       │  │              │
-│ optimization_   │  │          │  │              │
-│   prompt.py     │  │          │  │              │
-└────────┬────────┘  └──────────┘  └──────────────┘
-         │
-         ▼
-┌─────────────────────────────────────────────────┐
-│              GOOGLE GEMINI API                   │
-│         Model: gemini-3.5-flash-lite             │
-│         Structured JSON output via prompt        │
-└─────────────────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚                    STREAMLIT FRONTEND                        â”‚
+â”‚  app.py â†’ views/home, plan_trip, itinerary, assistant,      â”‚
+â”‚           budget, prompt_engineering, about                  â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                           â”‚ user inputs
+                           â–¼
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚                    SERVICE LAYER                             â”‚
+â”‚                                                             â”‚
+â”‚  itinerary_service.py   â”€â”€â”€ Core orchestration             â”‚
+â”‚  llm_service.py         â”€â”€â”€ Gemini API wrapper             â”‚
+â”‚  prompt_service.py      â”€â”€â”€ Prompt assembly                â”‚
+â”‚  pdf_service.py         â”€â”€â”€ PDF generation                 â”‚
+â”‚  weather_service.py     â”€â”€â”€ Weather API (optional)         â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                           â”‚
+          â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+          â–¼                â–¼                â–¼
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚  PROMPT LAYER   â”‚  â”‚  UTILS   â”‚  â”‚     DATA     â”‚
+â”‚                 â”‚  â”‚          â”‚  â”‚              â”‚
+â”‚ itinerary_      â”‚  â”‚validatorsâ”‚  â”‚destinations  â”‚
+â”‚   prompt.py     â”‚  â”‚.py       â”‚  â”‚.py           â”‚
+â”‚ modifier_       â”‚  â”‚helpers   â”‚  â”‚              â”‚
+â”‚   prompts.py    â”‚  â”‚.py       â”‚  â”‚              â”‚
+â”‚ optimization_   â”‚  â”‚          â”‚  â”‚              â”‚
+â”‚   prompt.py     â”‚  â”‚          â”‚  â”‚              â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+         â”‚
+         â–¼
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚              GOOGLE GEMINI API                   â”‚
+â”‚         Model: gemini-3.5-flash-lite             â”‚
+â”‚         Structured JSON output via prompt        â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ---
 
-## 🤖 Prompt Engineering Methodology
+## ðŸ¤– Prompt Engineering Methodology
 
-This project applies **5 advanced prompt engineering techniques** — the core academic contribution:
+This project applies **5 advanced prompt engineering techniques** â€” the core academic contribution:
 
-### Technique 1 — Role Prompting
+### Technique 1 â€” Role Prompting
 ```
 "You are an expert travel planner with 15 years of experience...
 You specialize in budget-conscious, personalized itineraries..."
 ```
 **Effect:** Forces the model to adopt an expert travel-guide persona, producing authoritative and contextually appropriate responses.
 
-### Technique 2 — Few-Shot Examples
+### Technique 2 â€” Few-Shot Examples
 The prompt includes a condensed example of the expected JSON structure for a single day slot, showing the model exactly what well-formed output looks like before asking it to generate the full trip.
 
 **Effect:** Reduces JSON structure errors by ~70% compared to zero-shot prompting alone.
 
-### Technique 3 — Structured Output via Schema
+### Technique 3 â€” Structured Output via Schema
 A complete JSON schema is embedded in the prompt, including field names, data types, and example values:
 ```json
 {
@@ -233,7 +233,7 @@ A complete JSON schema is embedded in the prompt, including field names, data ty
 ```
 **Effect:** Guarantees a machine-parseable response without using `response_mime_type` (which causes AFC conflicts).
 
-### Technique 4 — Chain-of-Thought (Budget Optimization)
+### Technique 4 â€” Chain-of-Thought (Budget Optimization)
 ```
 "Think step by step:
 1. Calculate total available budget per day
@@ -242,13 +242,13 @@ A complete JSON schema is embedded in the prompt, including field names, data ty
 ```
 **Effect:** Produces reasoned, specific budget recommendations instead of generic advice.
 
-### Technique 5 — Constraint Injection
+### Technique 5 â€” Constraint Injection
 All critical trip parameters are injected as hard constraints:
 ```
 "HARD CONSTRAINTS (must be followed):
-- Total budget: {budget} {currency} — DO NOT exceed this
-- Trip duration: exactly {num_days} days — no more, no less
-- Travellers: {num_travelers} — all costs must be total, not per person"
+- Total budget: {budget} {currency} â€” DO NOT exceed this
+- Trip duration: exactly {num_days} days â€” no more, no less
+- Travellers: {num_travelers} â€” all costs must be total, not per person"
 ```
 **Effect:** Prevents hallucinated out-of-budget or wrong-duration itineraries.
 
@@ -256,16 +256,16 @@ All critical trip parameters are injected as hard constraints:
 Beyond prompting, a 3-layer repair pipeline ensures valid JSON:
 ```
 Raw Response
-    → Strip code fences (```, ```json)
-    → Repair trailing commas  {a: 1,} → {a: 1}
-    → Extract outermost block { ... }
-    → json.loads() → validate schema
-    → If fail: retry with lower temperature
+    â†’ Strip code fences (```, ```json)
+    â†’ Repair trailing commas  {a: 1,} â†’ {a: 1}
+    â†’ Extract outermost block { ... }
+    â†’ json.loads() â†’ validate schema
+    â†’ If fail: retry with lower temperature
 ```
 
 ---
 
-## 🔬 Tech Stack
+## ðŸ”¬ Tech Stack
 
 | Layer | Technology | Version | Purpose |
 |---|---|---|---|
@@ -279,68 +279,68 @@ Raw Response
 
 ---
 
-## 📁 Project Structure
+## ðŸ“ Project Structure
 
 ```
 ai-personalized-travel-itinerary-generator/
-│
-├── 📱 app.py                    # Main entry point — Streamlit app
-├── 📋 requirements.txt          # Python dependencies
-├── 🔧 .env.example              # Environment variables template
-├── 🚫 .gitignore                # Git ignore rules
-├── 📄 LICENSE                   # MIT License
-│
-├── 📂 views/                    # Page-level UI components
-│   ├── home.py                  # Landing page
-│   ├── plan_trip.py             # Trip planning form
-│   ├── itinerary.py             # Itinerary display + modify
-│   ├── assistant.py             # AI travel assistant chat
-│   ├── budget.py                # Budget analysis & optimization
-│   ├── prompt_engineering.py    # PE techniques display (educational)
-│   └── about.py                 # Project info & architecture
-│
-├── 📂 services/                 # Business logic layer
-│   ├── llm_service.py           # Gemini API wrapper, JSON parsing
-│   ├── itinerary_service.py     # Itinerary generation & modification
-│   ├── prompt_service.py        # Prompt assembly & few-shot examples
-│   ├── pdf_service.py           # PDF export generation
-│   └── weather_service.py       # Weather API (optional integration)
-│
-├── 📂 prompts/                  # Prompt templates
-│   ├── itinerary_prompt.py      # Main generation prompt (5 PE techniques)
-│   ├── modifier_prompts.py      # Day/style modification prompts
-│   └── optimization_prompt.py   # Budget optimization prompt
-│
-├── 📂 utils/                    # Shared utilities
-│   ├── validators.py            # JSON validation + repair pipeline
-│   └── helpers.py               # Currency, date, formatting helpers
-│
-├── 📂 data/                     # Static data
-│   └── destinations.py          # Popular destinations, interests, presets
-│
-├── 📂 assets/                   # Media assets
-│   ├── screenshots/             # App screenshots for README
-│   └── demo/                    # Demo video
-│       └── demo.mp4
-│
-└── 📂 docs/                     # Project documentation
-    ├── project_report.md        # Full technical project report
-    ├── viva_qa.md               # Viva/defense Q&A preparation
-    ├── slides_outline.md        # Presentation outline
-    └── final_checklist.md       # Submission checklist
+â”‚
+â”œâ”€â”€ ðŸ“± app.py                    # Main entry point â€” Streamlit app
+â”œâ”€â”€ ðŸ“‹ requirements.txt          # Python dependencies
+â”œâ”€â”€ ðŸ”§ .env.example              # Environment variables template
+â”œâ”€â”€ ðŸš« .gitignore                # Git ignore rules
+â”œâ”€â”€ ðŸ“„ LICENSE                   # MIT License
+â”‚
+â”œâ”€â”€ ðŸ“‚ views/                    # Page-level UI components
+â”‚   â”œâ”€â”€ home.py                  # Landing page
+â”‚   â”œâ”€â”€ plan_trip.py             # Trip planning form
+â”‚   â”œâ”€â”€ itinerary.py             # Itinerary display + modify
+â”‚   â”œâ”€â”€ assistant.py             # AI travel assistant chat
+â”‚   â”œâ”€â”€ budget.py                # Budget analysis & optimization
+â”‚   â”œâ”€â”€ prompt_engineering.py    # PE techniques display (educational)
+â”‚   â””â”€â”€ about.py                 # Project info & architecture
+â”‚
+â”œâ”€â”€ ðŸ“‚ services/                 # Business logic layer
+â”‚   â”œâ”€â”€ llm_service.py           # Gemini API wrapper, JSON parsing
+â”‚   â”œâ”€â”€ itinerary_service.py     # Itinerary generation & modification
+â”‚   â”œâ”€â”€ prompt_service.py        # Prompt assembly & few-shot examples
+â”‚   â”œâ”€â”€ pdf_service.py           # PDF export generation
+â”‚   â””â”€â”€ weather_service.py       # Weather API (optional integration)
+â”‚
+â”œâ”€â”€ ðŸ“‚ prompts/                  # Prompt templates
+â”‚   â”œâ”€â”€ itinerary_prompt.py      # Main generation prompt (5 PE techniques)
+â”‚   â”œâ”€â”€ modifier_prompts.py      # Day/style modification prompts
+â”‚   â””â”€â”€ optimization_prompt.py   # Budget optimization prompt
+â”‚
+â”œâ”€â”€ ðŸ“‚ utils/                    # Shared utilities
+â”‚   â”œâ”€â”€ validators.py            # JSON validation + repair pipeline
+â”‚   â””â”€â”€ helpers.py               # Currency, date, formatting helpers
+â”‚
+â”œâ”€â”€ ðŸ“‚ data/                     # Static data
+â”‚   â””â”€â”€ destinations.py          # Popular destinations, interests, presets
+â”‚
+â”œâ”€â”€ ðŸ“‚ assets/                   # Media assets
+â”‚   â”œâ”€â”€ screenshots/             # App screenshots for README
+â”‚   â””â”€â”€ demo/                    # Demo video
+â”‚       â””â”€â”€ demo.mp4
+â”‚
+â””â”€â”€ ðŸ“‚ docs/                     # Project documentation
+    â”œâ”€â”€ project_report.md        # Full technical project report
+    â”œâ”€â”€ viva_qa.md               # Viva/defense Q&A preparation
+    â”œâ”€â”€ slides_outline.md        # Presentation outline
+    â””â”€â”€ final_checklist.md       # Submission checklist
 ```
 
 ---
 
-## ⚙️ Quick Start
+## âš™ï¸ Quick Start
 
 ### Prerequisites
 - Python 3.10 or higher
-- A Google AI Studio API key (free) → [Get one here](https://aistudio.google.com/app/apikey)
+- A Google AI Studio API key (free) â†’ [Get one here](https://aistudio.google.com/app/apikey)
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/ai-personalized-travel-itinerary-generator.git
+git clone https://github.com/aryanyadav5579/ai-personalized-travel-itinerary-generator.git
 cd ai-personalized-travel-itinerary-generator
 ```
 
@@ -371,15 +371,15 @@ cp .env.example .env         # macOS/Linux
 
 ---
 
-## 🔑 API Key Configuration
+## ðŸ”‘ API Key Configuration
 
 Edit `.env` with your keys:
 
 ```env
-# Required — Get free key at: https://aistudio.google.com/app/apikey
+# Required â€” Get free key at: https://aistudio.google.com/app/apikey
 GEMINI_API_KEY=your_gemini_api_key_here
 
-# Optional — Get free key at: https://openweathermap.org/api
+# Optional â€” Get free key at: https://openweathermap.org/api
 WEATHER_API_KEY=your_weather_api_key_here
 ```
 
@@ -394,11 +394,11 @@ WEATHER_API_KEY=your_weather_api_key_here
 |---|---|---|
 | gemini-3.5-flash-lite | 1,500/day | Used in this project |
 
-Each itinerary generation uses **1–3 API calls** depending on retries needed.
+Each itinerary generation uses **1â€“3 API calls** depending on retries needed.
 
 ---
 
-## ▶️ Running the App
+## â–¶ï¸ Running the App
 
 ```bash
 # Make sure your virtual environment is active
@@ -414,61 +414,61 @@ The app opens automatically at: **`http://localhost:8501`**
 ### Navigation
 | Page | Description |
 |---|---|
-| 🏠 Home | Overview and quick-start |
-| 🗺️ Plan Trip | Fill your trip details and generate itinerary |
-| 📅 My Itinerary | View, modify, and export your generated trip |
-| 🤖 AI Assistant | Chat with AI about your trip |
-| 💰 Budget | Detailed cost breakdown and optimization |
-| 🎓 Prompt Engineering | See the actual AI prompts used (educational) |
-| ℹ️ About Project | Architecture and methodology |
+| ðŸ  Home | Overview and quick-start |
+| ðŸ—ºï¸ Plan Trip | Fill your trip details and generate itinerary |
+| ðŸ“… My Itinerary | View, modify, and export your generated trip |
+| ðŸ¤– AI Assistant | Chat with AI about your trip |
+| ðŸ’° Budget | Detailed cost breakdown and optimization |
+| ðŸŽ“ Prompt Engineering | See the actual AI prompts used (educational) |
+| â„¹ï¸ About Project | Architecture and methodology |
 
 ---
 
-## ⚠️ Limitations
+## âš ï¸ Limitations
 
 | Limitation | Details |
 |---|---|
 | **Free API Quota** | Gemini free tier: 1,500 requests/day. Heavy use requires a paid plan |
-| **No Persistent Storage** | Itineraries are stored in browser session state — refresh = data lost |
+| **No Persistent Storage** | Itineraries are stored in browser session state â€” refresh = data lost |
 | **Weather Optional** | Real-time weather requires a separate OpenWeatherMap API key |
-| **No Real Booking** | This is a planning tool — it does not connect to booking platforms |
+| **No Real Booking** | This is a planning tool â€” it does not connect to booking platforms |
 | **Accuracy** | AI-generated attraction names and costs are estimates, not guarantees |
 | **Internet Required** | All AI generation requires active internet connection |
 
 ---
 
-## 🔮 Future Scope
+## ðŸ”® Future Scope
 
-- [ ] **User accounts & saved itineraries** — persistent storage with database
-- [ ] **Maps integration** — embed Google Maps with route visualization
-- [ ] **Real pricing APIs** — connect to Booking.com, Airbnb, Skyscanner APIs
-- [ ] **Multi-language support** — generate itineraries in user's language
-- [ ] **Social sharing** — share trip links with friends and family
-- [ ] **Collaborative planning** — real-time multi-user itinerary editing
-- [ ] **Mobile app** — React Native or Flutter wrapper
-- [ ] **Offline mode** — cache generated itineraries for offline viewing
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+- [ ] **User accounts & saved itineraries** â€” persistent storage with database
+- [ ] **Maps integration** â€” embed Google Maps with route visualization
+- [ ] **Real pricing APIs** â€” connect to Booking.com, Airbnb, Skyscanner APIs
+- [ ] **Multi-language support** â€” generate itineraries in user's language
+- [ ] **Social sharing** â€” share trip links with friends and family
+- [ ] **Collaborative planning** â€” real-time multi-user itinerary editing
+- [ ] **Mobile app** â€” React Native or Flutter wrapper
+- [ ] **Offline mode** â€” cache generated itineraries for offline viewing
 
 ---
 
-## 🙋 Author
+## ðŸ“„ License
+
+This project is licensed under the **MIT License** â€” see the [LICENSE](LICENSE) file for details.
+
+---
+
+## ðŸ™‹ Author
 
 **AI-Based Personalized Travel Itinerary Generator**  
-*Gen AI & Prompt Engineering — College Project · 2026*
+*Gen AI & Prompt Engineering â€” College Project Â· 2026*
 
-Built with ❤️ using Google Gemini AI, Streamlit, and Python
+Built with â¤ï¸ using Google Gemini AI, Streamlit, and Python
 
 ---
 
 <div align="center">
 
-⭐ **If this project helped you, give it a star!** ⭐
+â­ **If this project helped you, give it a star!** â­
 
-[Report Bug](https://github.com/<your-username>/ai-personalized-travel-itinerary-generator/issues) · [Request Feature](https://github.com/<your-username>/ai-personalized-travel-itinerary-generator/issues)
+[Report Bug](https://github.com/aryanyadav5579/ai-personalized-travel-itinerary-generator/issues) Â· [Request Feature](https://github.com/aryanyadav5579/ai-personalized-travel-itinerary-generator/issues)
 
 </div>
