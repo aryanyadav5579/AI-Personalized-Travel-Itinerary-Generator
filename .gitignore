@@ -1,0 +1,58 @@
+# ============================================================
+# Python
+# ============================================================
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+htmlcov/
+
+# ============================================================
+# Secrets & Environment
+# ============================================================
+.env
+*.env
+!.env.example
+.streamlit/secrets.toml
+
+# ============================================================
+# IDE / Editor
+# ============================================================
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+
+# ============================================================
+# OS
+# ============================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# ============================================================
+# Project-specific
+# ============================================================
+# PDF exports (generated at runtime)
+exports/*.pdf
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Logs
+*.log
+logs/

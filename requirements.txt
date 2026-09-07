@@ -1,0 +1,18 @@
+# Core framework
+streamlit>=1.36.0
+
+# Google Generative AI SDK
+google-genai>=2.22.0
+
+# Environment variables
+python-dotenv>=1.0.0
+
+# PDF generation
+reportlab>=4.2.0
+PyMuPDF>=1.28.0
+
+# HTTP requests (weather API, etc.)
+requests>=2.31.0
+
+# Image handling
+Pillow>=10.0.0
