@@ -518,103 +518,149 @@ Step 4: json.loads(cleaned)
 
 ```
 ai-personalized-travel-itinerary-generator/
-|
-|  [CORE APPLICATION]
-|
-+-- app.py                       Entry point — Streamlit app, sidebar nav, routing
-+-- requirements.txt             Pinned dependencies (7 packages)
-+-- .env.example                 Template — copy to .env and add API key
-+-- .gitignore                   Excludes .env, venv/, __pycache__, exports/
-+-- LICENSE                      MIT License 2026
-|
-|  [VIEWS — 7 Page Modules]
-|
-+-- views/
-|   +-- home.py                  Landing page — hero section, feature cards, quickstart
-|   +-- plan_trip.py             Trip form — all 9 input fields, validation, generate button
-|   +-- itinerary.py             Itinerary display — day cards, modify/regenerate controls
-|   +-- assistant.py             AI chat — context-injected travel assistant
-|   +-- budget.py                Budget analysis — cost breakdown, optimization
-|   +-- prompt_engineering.py    Educational — view actual prompts used (5 PE techniques)
-|   +-- about.py                 Project info — architecture, methodology, team
-|
-|  [SERVICES — Business Logic]
-|
-+-- services/
-|   +-- llm_service.py           Gemini API wrapper
-|   |                            call_gemini() — text generation (AFC disabled)
-|   |                            call_gemini_json() — JSON generation + repair
-|   |                            call_gemini_chat() — multi-turn chat (AFC disabled)
-|   |                            tokens_for_days(n) — dynamic token budget
-|   |                            _strip_code_fences() — response cleanup
-|   |                            _extract_json_block() — outermost JSON extraction
-|   |
-|   +-- itinerary_service.py     Itinerary orchestration
-|   |                            generate_itinerary() — full trip generation
-|   |                            modify_itinerary() — style/day modification
-|   |                            regenerate_day() — single-day regeneration
-|   |                            _build_assistant_context() — compact trip summary
-|   |
-|   +-- prompt_service.py        Prompt assembly
-|   |                            build_itinerary_prompt() — main generation prompt
-|   |                            get_few_shot_example() — example day JSON
-|   |
-|   +-- pdf_service.py           PDF export
-|   |                            generate_pdf() — ReportLab formatted itinerary PDF
-|   |
-|   +-- weather_service.py       Weather integration (optional)
-|                                get_weather() — OpenWeatherMap API call
-|                                Graceful fallback when API key not set
-|
-|  [PROMPTS — Prompt Engineering Templates]
-|
-+-- prompts/
-|   +-- itinerary_prompt.py      Main generation prompt
-|   |                            5 PE techniques: role, few-shot, schema,
-|   |                            constraints, output rules
-|   |
-|   +-- modifier_prompts.py      Style modification prompts
-|   |                            cheaper() / adventurous() / relaxed()
-|   |                            _ctx() helper — compact trip context
-|   |
-|   +-- optimization_prompt.py   Budget optimization prompt
-|                                Chain-of-thought reasoning template
-|
-|  [UTILS — Shared Utilities]
-|
-+-- utils/
-|   +-- validators.py            JSON validation + auto-repair pipeline
-|   |                            repair_json_string() — 4-step repair
-|   |                            validate_itinerary_json() — schema check
-|   |                            _check_slots() — slot type verification
-|   |
-|   +-- helpers.py               Formatting utilities
-|                                format_currency() — INR/USD/EUR formatting
-|                                format_duration() — human-readable duration
-|                                get_budget_category() — low/mid/high classifier
-|
-|  [DATA — Static Data]
-|
-+-- data/
-|   +-- destinations.py          Popular destinations (20+ presets)
-|                                Interest categories, accommodation types
-|                                Transport options, dietary preferences
-|
-|  [ASSETS — Media]
-|
-+-- assets/
-|   +-- screenshots/             Real app screenshots (5 PNGs)
-|   +-- demo/
-|       +-- demo.mp4             Full demo video (10.8MB)
-|
-|  [DOCS — Project Documentation]
-|
-+-- docs/
-    +-- project_report.md        Full technical project report
-    +-- viva_qa.md               20 viva/defense Q&A pairs (5 categories)
-    +-- slides_outline.md        Presentation slide-by-slide outline
-    +-- final_checklist.md       Submission verification checklist
-    +-- vscode_setup_guide.md    10-step VS Code setup guide
+│
+│  ┌─────────────────────────────────────────────────────────────┐
+│  │  ✈️  CORE APPLICATION FILES                                  │
+│  └─────────────────────────────────────────────────────────────┘
+│
+├── 🐍 app.py                      ← Main entry point — Streamlit app
+│                                  Multi-page routing via session_state
+│                                  Sidebar navigation (7 pages)
+│                                  Page title, icon, layout="wide"
+│
+├── 📄 requirements.txt            ← Pinned dependencies (7 packages)
+├── 📄 .env.example                ← Template — copy to .env, add API key
+├── 📄 .gitignore                  ← Excludes .env, venv/, __pycache__
+├── 📄 LICENSE                     ← MIT License 2026
+│
+│  ┌─────────────────────────────────────────────────────────────┐
+│  │  🖥️  VIEWS — 7 Page Modules                                  │
+│  └─────────────────────────────────────────────────────────────┘
+│
+├── 📂 views/
+│   │
+│   ├── 🐍 home.py                 ← Landing page
+│   │                              Hero section with feature cards
+│   │                              Quick-start CTA, destination preview
+│   │
+│   ├── 🐍 plan_trip.py            ← Trip planning form
+│   │                              9 input fields with full validation
+│   │                              Triggers itinerary generation
+│   │
+│   ├── 🐍 itinerary.py            ← Itinerary display
+│   │                              Day-by-day card rendering
+│   │                              Modify/regenerate controls per day
+│   │
+│   ├── 🐍 assistant.py            ← AI travel assistant chat
+│   │                              Context-injected multi-turn chat
+│   │                              st.chat_input() with session history
+│   │
+│   ├── 🐍 budget.py               ← Budget analysis
+│   │                              Itemized cost breakdown cards
+│   │                              One-click "Make it cheaper" optimization
+│   │
+│   ├── 🐍 prompt_engineering.py   ← Educational PE transparency
+│   │                              Displays all 5 prompt techniques
+│   │                              Shows actual prompts sent to Gemini
+│   │
+│   └── 🐍 about.py                ← Project info page
+│                                  Architecture diagram, methodology
+│                                  Tech stack, academic context
+│
+│  ┌─────────────────────────────────────────────────────────────┐
+│  │  ⚙️  SERVICES — Business Logic Layer                         │
+│  └─────────────────────────────────────────────────────────────┘
+│
+├── 📂 services/
+│   │
+│   ├── 🐍 llm_service.py          ← Gemini API wrapper
+│   │                              • call_gemini() — text generation (AFC disabled)
+│   │                              • call_gemini_json() — JSON + repair pipeline
+│   │                              • call_gemini_chat() — multi-turn chat
+│   │                              • tokens_for_days(n) — dynamic token budget
+│   │                              • _strip_code_fences() — response cleanup
+│   │                              • _extract_json_block() — JSON extraction
+│   │
+│   ├── 🐍 itinerary_service.py    ← Itinerary orchestration
+│   │                              • generate_itinerary() — full trip generation
+│   │                              • modify_itinerary() — style/day modification
+│   │                              • regenerate_day() — single-day regeneration
+│   │                              • _build_assistant_context() — 5-line summary
+│   │
+│   ├── 🐍 prompt_service.py       ← Prompt assembly
+│   │                              • build_itinerary_prompt() — main prompt
+│   │                              • get_few_shot_example() — example JSON
+│   │
+│   ├── 🐍 pdf_service.py          ← PDF export
+│   │                              ReportLab formatted itinerary PDF
+│   │                              Budget table + day-by-day layout
+│   │
+│   └── 🐍 weather_service.py      ← Weather integration (optional)
+│                                  OpenWeatherMap API call
+│                                  Graceful fallback when key not set
+│
+│  ┌─────────────────────────────────────────────────────────────┐
+│  │  🤖 PROMPTS — Prompt Engineering Templates                   │
+│  └─────────────────────────────────────────────────────────────┘
+│
+├── 📂 prompts/
+│   │
+│   ├── 🐍 itinerary_prompt.py     ← Main generation prompt
+│   │                              5 PE techniques applied here:
+│   │                              Role + few-shot + schema +
+│   │                              constraints + output rules
+│   │
+│   ├── 🐍 modifier_prompts.py     ← Style modification prompts
+│   │                              cheaper() / adventurous() / relaxed()
+│   │                              _ctx() helper — compact trip context
+│   │
+│   └── 🐍 optimization_prompt.py  ← Budget optimization prompt
+│                                  Chain-of-thought reasoning template
+│                                  Step-by-step cost reduction logic
+│
+│  ┌─────────────────────────────────────────────────────────────┐
+│  │  🛠️  UTILS — Shared Utilities                                │
+│  └─────────────────────────────────────────────────────────────┘
+│
+├── 📂 utils/
+│   │
+│   ├── 🐍 validators.py           ← JSON validation + auto-repair
+│   │                              • repair_json_string() — 4-step repair
+│   │                              • validate_itinerary_json() — schema check
+│   │                              • _check_slots() — slot type verification
+│   │
+│   └── 🐍 helpers.py              ← Formatting utilities
+│                                  • format_currency() — INR/USD/EUR
+│                                  • format_duration() — human-readable
+│                                  • get_budget_category() — classifier
+│
+│  ┌─────────────────────────────────────────────────────────────┐
+│  │  📊 DATA · 🖼️  ASSETS · 📚 DOCS                              │
+│  └─────────────────────────────────────────────────────────────┘
+│
+├── 📂 data/
+│   └── 🐍 destinations.py         ← Static data
+│                                  20+ popular destination presets
+│                                  Interest categories, accommodation
+│                                  types, transport, dietary options
+│
+├── 📂 assets/
+│   ├── 📂 screenshots/            ← Real app screenshots (5 PNGs)
+│   │   ├── 🖼️  home_page.png      Home landing page
+│   │   ├── 🖼️  plan_trip.png      Trip planning form
+│   │   ├── 🖼️  itinerary_view.png Generated itinerary cards
+│   │   ├── 🖼️  budget_page.png    Budget breakdown
+│   │   └── 🖼️  assistant_chat.png AI travel assistant
+│   │
+│   └── 📂 demo/
+│       └── 🎬 demo.mp4            ← Full demo video (10.8 MB)
+│
+└── 📂 docs/
+    ├── 📝 project_report.md       ← Full technical project report
+    ├── 📝 viva_qa.md              ← 20 viva/defense Q&A pairs
+    ├── 📝 slides_outline.md       ← Presentation slide outline
+    ├── 📝 final_checklist.md      ← Submission verification checklist
+    └── 📝 vscode_setup_guide.md   ← 10-step VS Code setup guide
 ```
 
 ---
